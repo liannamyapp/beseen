@@ -41,12 +41,11 @@
       <span class="lockup-seen">SEEN</span>
     </a>
     <nav class="nav-links" aria-label="Primary">
-        <a href="/aboutus.html" data-i18n="nav.About Us">About Us</a>
-    <a href="/services.html" data-i18n="nav.services">Services</a>
-    <a href="/CaseStudys.html" data-i18n="nav.Case Studys">Case Studys </a>
-    <a href="/Getoffer.html" data-i18n="nav.Get offer">Get offer</a>
-    <a href="/contact.html" data-i18n="nav.Contact us">Contact us</a>
-   
+      <a href="aboutus.html" data-i18n="nav.About Us">About Us</a>
+      <a href="services.html" data-i18n="nav.services">Services</a>
+      <a href="CaseStudys.html" data-i18n="nav.Case Studys">Case Studys</a>
+      <a href="Getoffer.html" data-i18n="nav.Get offer">Get offer</a>
+      <a href="contact.html" data-i18n="nav.Contact us">Contact us</a>
     </nav>
     <div class="nav-end">
       <div class="clocks" aria-hidden="true">
@@ -66,11 +65,11 @@
   </header>
 
   <div class="mobile-menu" id="mobile-menu" hidden>
-       <a href="/aboutus.html" data-i18n="nav.About Us">About Us</a>
-    <a href="/services.html" data-i18n="nav.services">Services</a>
-    <a href="/CaseStudys.html" data-i18n="nav.Case Studys">Case Studys </a>
-    <a href="/Getoffer.html" data-i18n="nav.Get offer">Get offer</a>
-    <a href="/contact.html" data-i18n="nav.Contact us">Contact us</a>
+    <a href="aboutus.html" data-i18n="nav.About Us">About Us</a>
+    <a href="services.html" data-i18n="nav.services">Services</a>
+    <a href="CaseStudys.html" data-i18n="nav.Case Studys">Case Studys</a>
+    <a href="Getoffer.html" data-i18n="nav.Get offer">Get offer</a>
+    <a href="contact.html" data-i18n="nav.Contact us">Contact us</a>
     <a class="btn" href="#contact" data-i18n="nav.cta">Let’s talk</a>
   </div>
 
@@ -528,7 +527,7 @@
         <aside class="contact-aside">
           <a class="mail" href="mailto:info@hr4eu.cz">info@hr4eu.cz</a>
           <p>Praha · Yerevan</p>
-          <p><a href="https://www.hr4eu.cz" rel="noreferrer">hr4eu.cz</a></p>
+          <p><a href="https://www.hr4eu.cz" target="_blank" rel="noopener noreferrer">hr4eu.cz</a></p>
         </aside>
       </div>
     </section>
@@ -549,5 +548,22 @@
   <script src="https://unpkg.com/split-type"></script>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
   <script src="js/main.js?v=2"></script>
+
+  <!-- Լրացուցիչ script՝ Lenis-ի event listener-ները կառավարելու և հղումների բացումը երաշխավորելու համար -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('a[href]').forEach(link => {
+        link.addEventListener('click', (e) => {
+          const href = link.getAttribute('href');
+          
+          // Եթե ներքին էջի հղում է (.html)
+          if (href && !href.startsWith('#') && !href.startsWith('mailto:') && !href.startsWith('http')) {
+            e.preventDefault();
+            window.location.href = href;
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
