@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BE SEEN — Marketing for restaurants</title>
+  <meta name="description" content="BE SEEN runs marketing for restaurants: SMM, ads, film, analytics. MYATA Platinum, Better Together, Bellagio, PA DENIKS. Praha · Yerevan." />
+  <meta name="theme-color" content="#0B1F3A" />
+  <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/logo/favicon.png" />
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="is-loading">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true">
+    <span class="cursor-dot"></span>
+    <span class="cursor-label"></span>
+  </div>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <p class="loader-lockup">
+        <span class="be">BE<i></i></span>
+        <span class="seen">SEEN</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <span class="scroll-progress-dot"></span>
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="lockup" href="#top" aria-label="BE SEEN, home">
+      <span class="lockup-be">BE<i></i></span>
+      <span class="lockup-seen">SEEN</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#work" data-i18n="nav.work">Work</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="nav-end">
+      <div class="clocks" aria-hidden="true">
+        <span data-clock="Europe/Prague">PRG <b>—</b></span>
+        <span data-clock="Asia/Yerevan">EVN <b>—</b></span>
+      </div>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="is-active" aria-pressed="true">EN</button>
+        <span class="lang-rule"></span>
+        <button type="button" data-lang="cs" aria-pressed="false">CS</button>
+      </div>
+      <a class="btn btn-nav magnetic" href="#contact" data-i18n="nav.cta">Let’s talk</a>
+    </div>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <a href="#work" data-i18n="nav.work">Work</a>
+    <a href="#services" data-i18n="nav.services">Services</a>
+    <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+    <a class="btn" href="#contact" data-i18n="nav.cta">Let’s talk</a>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span data-i18n="hero.where">Praha · Yerevan</span>
+          <span class="eyebrow-dot"></span>
+          <span data-i18n="hero.for">For restaurants</span>
+        </p>
+        <h1 class="hero-title">
+          <span class="line" data-i18n="hero.l1">Most restaurants</span>
+          <span class="line" data-i18n="hero.l2">are not seen.</span>
+        </h1>
+        <p class="hero-lede" data-i18n="hero.lede">We change that. Every month you get one number that decides, and three that explain it.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid magnetic" href="#contact" data-i18n="hero.cta">Start a conversation</a>
+          <a class="btn btn-ghost magnetic" href="#work" data-i18n="hero.work">See the work</a>
+        </div>
+      </div>
+
+      <div class="hero-device">
+        <div class="orb" data-cursor="Play">
+          <video class="orb-video" autoplay muted loop playsinline preload="metadata" poster="assets/work/myata.webp">
+            <source src="assets/video/reel-1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <p class="hero-caption" data-i18n="hero.caption">The dot is the crop. Portraits, plates, rooms — never a square.</p>
+      </div>
+    </section>
+
+    <section class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>MYATA Platinum</span><i></i>
+        <span>Better Together</span><i></i>
+        <span>Bellagio</span><i></i>
+        <span>PA DENIKS</span><i></i>
+        <span>Sushi</span><i></i>
+        <span>Instagram</span><i></i>
+        <span>TikTok</span><i></i>
+        <span>Google</span><i></i>
+        <span>MYATA Platinum</span><i></i>
+        <span>Better Together</span><i></i>
+        <span>Bellagio</span><i></i>
+        <span>PA DENIKS</span><i></i>
+        <span>Sushi</span><i></i>
+        <span>Instagram</span><i></i>
+        <span>TikTok</span><i></i>
+        <span>Google</span><i></i>
+      </div>
+    </section>
+
+    <section class="problem" id="problem">
+      <div class="section-index">01</div>
+      <p class="section-kicker" data-i18n="problem.kicker">The problem</p>
+      <h2 class="display" data-i18n="problem.title">Most brands struggle to be seen and heard. That is the work.</h2>
+      <ul class="problem-list">
+        <li data-i18n="problem.1">Low visibility on Google</li>
+        <li data-i18n="problem.2">A forgettable social presence</li>
+        <li data-i18n="problem.3">The wrong audience, well targeted</li>
+        <li data-i18n="problem.4">Content with no spine</li>
+        <li data-i18n="problem.5">Marketing that is not measured</li>
+        <li data-i18n="problem.6">Print that costs more than it returns</li>
+      </ul>
+    </section>
+
+    <section class="rooms" id="rooms">
+      <div class="rooms-head">
+        <div>
+          <div class="section-index">02</div>
+          <p class="section-kicker" data-i18n="rooms.kicker">Rooms we keep</p>
+          <h2 class="display" data-i18n="rooms.title">The names on the door.</h2>
+        </div>
+        <p class="rooms-aside" data-i18n="rooms.aside">Five hospitality rooms. Yerevan, Türkiye, Argentina. The job is the same: the night is visible before a guest arrives.</p>
+      </div>
+      <ol class="room-list">
+        <li class="room-row">
+          <h3>MYATA Platinum</h3>
+          <p class="room-city">Yerevan · Lounge</p>
+          <p class="room-did" data-i18n="r.myata">We film the grill, the lounge, the hour after midnight. Reels and stills for Instagram and TikTok. Monthly SMM so the room stays in the phone.</p>
+        </li>
+        <li class="room-row">
+          <h3>Better Together</h3>
+          <p class="room-city">Yerevan · Café</p>
+          <p class="room-did" data-i18n="r.better">Atmosphere film, plate stills, guest-facing copy. The café as it is at 11:00 and at 19:00.</p>
+        </li>
+        <li class="room-row">
+          <h3>Bellagio</h3>
+          <p class="room-city">Yerevan · Restaurant</p>
+          <p class="room-did" data-i18n="r.bellagio">Atmosphere reels. Stairs, tables, the cut of the room after dusk. Shot for the feed, not for a brochure.</p>
+        </li>
+        <li class="room-row">
+          <h3>PA DENIKS</h3>
+          <p class="room-city">Argentina · Bakery</p>
+          <p class="room-did" data-i18n="r.deniks">Process film. Hands, dough, the morning. Content for the feed and for ads.</p>
+        </li>
+        <li class="room-row">
+          <h3>Sushi</h3>
+          <p class="room-city">Türkiye · Restaurant</p>
+          <p class="room-did" data-i18n="r.sushi">Plate films. Close, bright, made to stop a thumb. Cut for every network we run.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="services" id="services">
+      <div class="services-sticky">
+        <div class="section-index">03</div>
+        <p class="section-kicker" data-i18n="services.kicker">What we do</p>
+        <h2 class="display" data-i18n="services.title">Leave the marketing to us.</h2>
+        <p class="services-note" data-i18n="services.note">We run the month: film, feed, ads, and one report. You run the room.</p>
+      </div>
+      <ol class="service-list">
+        <li>
+          <span class="service-num">01</span>
+          <div>
+            <h3 data-i18n="s1.title">Social media, kept.</h3>
+            <p data-i18n="s1.body">Instagram, TikTok, Facebook, YouTube. 12–20 professional posts a month, written and scheduled. A shared calendar you approve before anything goes live. Captions, tags, and language for the city. A monthly read of reach, saves, and what actually booked a table.</p>
+            <p class="service-meta">Instagram · YouTube · Facebook · TikTok</p>
+          </div>
+        </li>
+        <li>
+          <span class="service-num">02</span>
+          <div>
+            <h3 data-i18n="s2.title">Ads that know who is hungry.</h3>
+            <p data-i18n="s2.body">Google, Seznam, TripAdvisor, Yelp. We set the accounts, split tourists from locals, and build a funnel that respects the budget. Weekly optimisation. We track cost per reservation — not vanity reach. No spray. No pray.</p>
+            <p class="service-meta">Google · Seznam · TripAdvisor · Yelp</p>
+          </div>
+        </li>
+        <li>
+          <span class="service-num">03</span>
+          <div>
+            <h3 data-i18n="s3.title">Pictures and films of the room.</h3>
+            <p data-i18n="s3.body">On-site photo and film. Lighting, food styling, chef hands, the service floor after nine. Reels cut for TikTok and Instagram. A library you can use on the site, in ads, and in print. Shot for the feed, not for a brochure.</p>
+            <p class="service-meta">TikTok · Instagram · YouTube</p>
+          </div>
+        </li>
+        <li>
+          <span class="service-num">04</span>
+          <div>
+            <h3 data-i18n="s4.title">One number. Three that explain it.</h3>
+            <p data-i18n="s4.body">Eight KPIs, every month: total reach, new followers, engagement, Reels views, messages and bookings, average CPC, the winning post, new reviews. Then what we change next. One month gives context. Three months tell the truth.</p>
+            <p class="service-meta" data-i18n="s4.meta">Sent at the start of the month. Always.</p>
+          </div>
+        </li>
+        <li>
+          <span class="service-num">05</span>
+          <div>
+            <h3 data-i18n="s5.title">A site that does not apologise.</h3>
+            <p data-i18n="s5.body">The digital front door. Fast on a phone, menu with prices and pictures, a reservation widget, Czech / English / Armenian if the room needs it. Lookers become bookers.</p>
+          </div>
+        </li>
+        <li>
+          <span class="service-num">06</span>
+          <div>
+            <h3 data-i18n="s6.title">The room next door.</h3>
+            <p data-i18n="s6.body">Competitor posting, the content that worked, tone, review velocity, search rank. Hospitality and social trends. Target behaviour. Then a written plan for the next thirty days.</p>
+          </div>
+        </li>
+      </ol>
+      <ol class="practice">
+        <li>
+          <span>01</span>
+          <h3 data-i18n="m1.title">Film the room</h3>
+          <p data-i18n="m1.body">On-site stills and reels. Plates, hands, the hour that sells the night.</p>
+        </li>
+        <li>
+          <span>02</span>
+          <h3 data-i18n="m2.title">Keep the feed</h3>
+          <p data-i18n="m2.body">12–20 posts. Calendar you sign off. Copy in the languages the city uses.</p>
+        </li>
+        <li>
+          <span>03</span>
+          <h3 data-i18n="m3.title">Spend where hunger is</h3>
+          <p data-i18n="m3.body">Google, Seznam, maps, reviews. Tourists and locals as two audiences. Weekly spend check.</p>
+        </li>
+        <li>
+          <span>04</span>
+          <h3 data-i18n="m4.title">Send the number</h3>
+          <p data-i18n="m4.body">Eight KPIs on day one. Then the three changes for the month ahead.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="work" id="work">
+      <div class="work-head">
+        <div>
+          <div class="section-index light">04</div>
+          <p class="section-kicker light" data-i18n="work.kicker">Selected rooms</p>
+          <h2 class="display light" data-i18n="work.title">Work that was meant to be watched.</h2>
+        </div>
+        <p class="work-aside" data-i18n="work.aside">Yerevan, Türkiye, Argentina. Food, rooms, hands. Scroll sideways.</p>
+      </div>
+      <div class="work-pin">
+        <div class="work-track">
+          <article class="work-card" data-cursor="Watch">
+            <div class="work-media">
+              <video muted loop playsinline preload="metadata" poster="assets/work/myata.webp">
+                <source src="assets/video/reel-1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <header>
+              <p class="work-place">Yerevan, AM</p>
+              <h3>MYATA Platinum</h3>
+            </header>
+            <p class="work-did" data-i18n="w.myata">Reels and stills of the grill, the lounge, the night.</p>
+          </article>
+          <article class="work-card" data-cursor="Watch">
+            <div class="work-media">
+              <video muted loop playsinline preload="metadata" poster="assets/work/better-together.webp">
+                <source src="assets/video/reel-2.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <header>
+              <p class="work-place">Yerevan, AM</p>
+              <h3>Better Together</h3>
+            </header>
+            <p class="work-did" data-i18n="w.better">Café atmosphere. Plates, light, the two sittings.</p>
+          </article>
+          <article class="work-card" data-cursor="Watch">
+            <div class="work-media">
+              <video muted loop playsinline preload="metadata" poster="assets/work/sushi.webp">
+                <source src="assets/video/reel-3.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <header>
+              <p class="work-place">Türkiye</p>
+              <h3>Sushi</h3>
+            </header>
+            <p class="work-did" data-i18n="w.sushi">Plate films cut for the feed and for ads.</p>
+          </article>
+          <article class="work-card" data-cursor="Watch">
+            <div class="work-media">
+              <video muted loop playsinline preload="metadata" poster="assets/work/deniks.webp">
+                <source src="assets/video/reel-4.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <header>
+              <p class="work-place">Argentina</p>
+              <h3>PA DENIKS</h3>
+            </header>
+            <p class="work-did" data-i18n="w.deniks">Bakery process. Hands, dough, the morning.</p>
+          </article>
+          <article class="work-card" data-cursor="Watch">
+            <div class="work-media">
+              <video muted loop playsinline preload="metadata" poster="assets/work/bellagio.webp">
+                <source src="assets/video/reel-5.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <header>
+              <p class="work-place">Yerevan, AM</p>
+              <h3>Bellagio</h3>
+            </header>
+            <p class="work-did" data-i18n="w.bellagio">Atmosphere reels. Stairs, tables, after dusk.</p>
+          </article>
+          <article class="work-card" data-cursor="Watch">
+            <div class="work-media">
+              <video muted loop playsinline preload="metadata" poster="assets/work/process-1.webp">
+                <source src="assets/video/reel-7.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <header>
+              <p class="work-place" data-i18n="work.process">On set</p>
+              <h3 data-i18n="work.making">Making the film</h3>
+            </header>
+            <p class="work-did" data-i18n="w.process">How the month is shot, before it is posted.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stills">
+      <div class="stills-head">
+        <div class="section-index">05</div>
+        <p class="section-kicker" data-i18n="stills.kicker">Stills</p>
+        <p class="stills-note" data-i18n="stills.note">We shoot the room as it is. Then we crop it into a circle.</p>
+      </div>
+      <div class="stills-row">
+        <figure class="still-dot">
+          <img src="assets/work/myata.webp" alt="Kitchen work at MYATA Platinum" />
+        </figure>
+        <figure class="still-dot">
+          <img src="assets/work/better-together.webp" alt="Better Together Cafe" />
+        </figure>
+        <figure class="still-dot">
+          <img src="assets/work/bellagio.webp" alt="Bellagio Restaurant, Yerevan" />
+        </figure>
+        <figure class="still-dot">
+          <img src="assets/work/deniks.webp" alt="PA DENIKS bakery" />
+        </figure>
+        <figure class="still-dot">
+          <img src="assets/work/process-1.webp" alt="Filming in the kitchen" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="results" id="results">
+      <div class="section-index">06</div>
+      <p class="section-kicker" data-i18n="results.kicker">Proof, not adjectives</p>
+      <p class="mega">
+        <span class="mega-num" data-count="38">0</span><span class="mega-unit">%</span>
+      </p>
+      <p class="mega-caption" data-i18n="results.caption">more enquiries in 90 days.</p>
+      <p class="results-not" data-i18n="results.not">Not “transforming brands through digital excellence.”</p>
+
+      <ul class="kpis">
+        <li><span data-i18n="kpi.1">Total reach</span></li>
+        <li><span data-i18n="kpi.2">New followers</span></li>
+        <li><span data-i18n="kpi.3">Engagement</span></li>
+        <li><span data-i18n="kpi.4">Reels views</span></li>
+        <li><span data-i18n="kpi.5">Enquiries &amp; bookings</span></li>
+        <li><span data-i18n="kpi.6">Average CPC</span></li>
+        <li><span data-i18n="kpi.7">Best post of the month</span></li>
+        <li><span data-i18n="kpi.8">New reviews</span></li>
+      </ul>
+    </section>
+
+    <section class="packages" id="packages">
+      <div class="section-index">07</div>
+      <p class="section-kicker" data-i18n="pack.kicker">How we work together</p>
+      <h2 class="display" data-i18n="pack.title">Pick a depth. Not a gimmick.</h2>
+      <div class="pack-grid">
+        <article class="pack is-selected" data-tier="starter" tabindex="0" role="button" aria-pressed="true">
+          <p class="pack-tier">Starter</p>
+          <h3 data-i18n="p1.name">Build presence</h3>
+          <ul>
+            <li data-i18n="p1.1">Brand and feed audit — 4 900 Kč</li>
+            <li data-i18n="p1.2">12 posts / month + calendar — 9 900 Kč</li>
+            <li data-i18n="p1.3">Monthly analytics, 8 KPIs — 2 900 Kč</li>
+            <li data-i18n="p1.4">Local competitor read — 2 200 Kč</li>
+          </ul>
+          <p class="pack-price">19 900 Kč <span data-i18n="pack.mo">/ mo</span> · ~€790</p>
+        </article>
+        <article class="pack pack-focus" data-tier="growth" tabindex="0" role="button" aria-pressed="false">
+          <p class="pack-tier">Growth</p>
+          <h3 data-i18n="p2.name">Scale confidence</h3>
+          <ul>
+            <li data-i18n="p2.1">Everything in Starter — 19 900 Kč</li>
+            <li data-i18n="p2.2">Paid ads, 1 channel — 7 900 Kč</li>
+            <li data-i18n="p2.3">Influencer outreach, 2 / mo — 4 900 Kč</li>
+            <li data-i18n="p2.4">Calls every two weeks — 2 200 Kč</li>
+          </ul>
+          <p class="pack-price">34 900 Kč <span data-i18n="pack.mo">/ mo</span> · ~€1,390</p>
+        </article>
+        <article class="pack" data-tier="pro" tabindex="0" role="button" aria-pressed="false">
+          <p class="pack-tier">Pro</p>
+          <h3 data-i18n="p3.name">Full partner</h3>
+          <ul>
+            <li data-i18n="p3.1">Everything in Growth — 34 900 Kč</li>
+            <li data-i18n="p3.2">Multi-channel ads — 8 900 Kč</li>
+            <li data-i18n="p3.3">Full photo and reel production — 12 900 Kč</li>
+            <li data-i18n="p3.4">Weekly CMO support — 3 200 Kč</li>
+          </ul>
+          <p class="pack-price" data-i18n="p3.price">from 59 900 Kč / mo · ~€2,390</p>
+        </article>
+      </div>
+
+      <div class="calc" id="pricing">
+        <div class="calc-head">
+          <p class="section-kicker" data-i18n="calc.kicker">The sum</p>
+          <h2 class="display" data-i18n="calc.title">Add what the room needs.</h2>
+          <p class="calc-lede" data-i18n="calc.lede">Starter, Growth, or Pro — then the extras. Ad spend is not in the number. VAT is not in the number.</p>
+        </div>
+
+        <div class="calc-grid">
+          <form class="calc-form" id="quote-form">
+            <fieldset>
+              <legend data-i18n="calc.tier">Package</legend>
+              <label class="calc-choice">
+                <input type="radio" name="tier" value="starter" checked />
+                <span>Starter · 19 900 Kč</span>
+              </label>
+              <label class="calc-choice">
+                <input type="radio" name="tier" value="growth" />
+                <span>Growth · 34 900 Kč</span>
+              </label>
+              <label class="calc-choice">
+                <input type="radio" name="tier" value="pro" />
+                <span>Pro · 59 900 Kč</span>
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend data-i18n="calc.addons">Add-ons</legend>
+              <label class="calc-choice" data-for="posts20">
+                <input type="checkbox" name="addon" value="posts20" />
+                <span data-i18n="calc.posts">+8 posts (20 / month) — 6 900 Kč</span>
+              </label>
+              <label class="calc-choice" data-for="ads">
+                <input type="checkbox" name="addon" value="ads" />
+                <span data-i18n="calc.ads">Paid ads, extra channel — 4 900 Kč</span>
+              </label>
+              <label class="calc-choice" data-for="infl">
+                <input type="checkbox" name="addon" value="infl" />
+                <span data-i18n="calc.infl">Influencer outreach, 2 / mo — 4 900 Kč</span>
+              </label>
+              <label class="calc-choice" data-for="shoot">
+                <input type="checkbox" name="addon" value="shoot" />
+                <span data-i18n="calc.shoot">On-site shoot, one day — 12 900 Kč</span>
+              </label>
+              <label class="calc-choice" data-for="web">
+                <input type="checkbox" name="addon" value="web" />
+                <span data-i18n="calc.web">Website visualisation — 19 900 Kč</span>
+              </label>
+            </fieldset>
+
+            <label class="calc-months">
+              <span><span data-i18n="calc.months">Months</span> <b id="months-val">3</b></span>
+              <input type="range" name="months" id="calc-months" min="1" max="12" value="3" />
+            </label>
+          </form>
+
+          <aside class="calc-sum" aria-live="polite">
+            <p class="calc-sum-kicker" data-i18n="calc.bill">Itemised</p>
+            <ol class="calc-lines" id="calc-lines"></ol>
+            <p class="calc-month" id="calc-month"></p>
+            <p class="calc-total" id="calc-total"></p>
+            <p class="calc-note" data-i18n="calc.note">Excl. VAT. Paid media stays on your accounts. Three months is the honest minimum.</p>
+            <a class="btn btn-solid magnetic" href="#contact" id="calc-send" data-i18n="calc.send">Send this sum</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-index light">08</div>
+      <p class="section-kicker light" data-i18n="contact.kicker">A quiet next step</p>
+      <h2 class="display light">
+        <span data-i18n="contact.title">Questions?</span>
+      </h2>
+      <p class="contact-lede light" data-i18n="contact.lede">Tell us the room. We will tell you what is missing.</p>
+
+      <div class="contact-grid">
+        <form class="contact-form" id="contact-form" novalidate>
+          <label>
+            <span data-i18n="form.name">Name</span>
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            <span data-i18n="form.email">Email</span>
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+          <label>
+            <span data-i18n="form.room">Restaurant / city</span>
+            <input type="text" name="room" autocomplete="organization" />
+          </label>
+          <label class="full">
+            <span data-i18n="form.note">What should be seen?</span>
+            <textarea name="note" rows="4"></textarea>
+          </label>
+          <button class="btn btn-solid magnetic" type="submit" data-i18n="form.send">Send</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+
+        <aside class="contact-aside">
+          <a class="mail" href="mailto:info@hr4eu.cz">info@hr4eu.cz</a>
+          <p>Praha · Yerevan</p>
+          <p><a href="https://www.hr4eu.cz" rel="noreferrer">hr4eu.cz</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="lockup lockup-foot" href="#top" aria-label="BE SEEN">
+      <span class="lockup-be">BE<i></i></span>
+      <span class="lockup-seen">SEEN</span>
+    </a>
+    <p data-i18n="footer.line">Plain. Numerate. Unhurried.</p>
+    <p class="footer-meta">© <span id="year"></span> BE SEEN · Version 1.0</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>

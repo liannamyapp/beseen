@@ -1,0 +1,8 @@
+{
+  "name": "be-seen",
+  "private": true,
+  "description": "BE SEEN — marketing for restaurants",
+  "scripts": {
+    "start": "python3 -m http.server 8765"
+  }
+}
